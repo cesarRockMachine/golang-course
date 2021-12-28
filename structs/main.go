@@ -24,6 +24,7 @@ func main() {
 		},
 	}
 	//fmt.Println(blackmamba)
+	blackmamba.print()
 	blackmamba.updateName("The Goat")
 	blackmamba.print()
 
@@ -34,5 +35,5 @@ func (p *person) updateName(newName string) {
 }
 
 func (p person) print() {
-	fmt.Printf("%+v", p)
+	fmt.Printf("%+v\n", p)
 }
